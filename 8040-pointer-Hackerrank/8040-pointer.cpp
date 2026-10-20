@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-void update(int *a, int *b) 
-{
+void update(int *a, int *b) {
     int sum = *a + *b;
     int abs_diff = (*a > *b) ? (*a - *b) : (*b - *a);
     
@@ -9,8 +8,7 @@ void update(int *a, int *b)
     *b = abs_diff;
 }
 
-int main() 
-{
+int main() {
     int a, b;
     scanf("%d %d", &a, &b);
     update(&a, &b);
